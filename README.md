@@ -1,10 +1,13 @@
 # mini_cheetah_pybullet
+
 mpc and wbc for mini cheetah in pybullet
+
 mpc forked from https://github.com/Derek-TH-Wang/quadruped_ctrl
+
 we added the wbc to climb the stairs, since the mpc cannot climb the stairs.
 
 System requirements:
-Ubuntu 16.04
+Ubuntu 16.04 ros kinetic
 
 Running:
 
