@@ -121,7 +121,7 @@ void RobotComCallBack(const quadruped_ctrl::commandDes& msg){//反馈的关节�
   _vectorNavData.com_vel(0, 0) = msg.com_velocity[0];
   _vectorNavData.com_vel(1, 0) = msg.com_velocity[1];
   _vectorNavData.com_vel(2, 0) = msg.com_velocity[2];
-std::cout << " Y位置  " << msg.com_position[1] << " Y速度  " << msg.com_velocity[1] << std::endl;
+//std::cout << " Y位置  " << msg.com_position[1] << " Y速度  " << msg.com_velocity[1] << std::endl;
 }
 
 bool setRobotMode(quadruped_ctrl::QuadrupedCmd::Request  &req,
