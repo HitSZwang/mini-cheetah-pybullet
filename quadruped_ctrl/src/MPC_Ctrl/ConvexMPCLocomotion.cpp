@@ -494,7 +494,7 @@ void ConvexMPCLocomotion::run(Quadruped<float> &_quadruped, LegController<float>
     }
     
   // END of WBC Update
-   std::cout << "Ypos " << pBody_des[1] <<   "  状态估计pos  "  << seResult.position[1]   << "   vdes " << v_des_world[1] << "  状态估计v " << seResult.vWorld[1]<< std::endl;
+  // std::cout << "Ypos " << pBody_des[1] <<   "  状态估计pos  "  << seResult.position[1]   << "   vdes " << v_des_world[1] << "  状态估计v " << seResult.vWorld[1]<< std::endl;
   
 
 }
