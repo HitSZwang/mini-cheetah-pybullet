@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 
 import pybullet as p
 import numpy
@@ -88,8 +88,8 @@ def thread_job():
 
 def callback_state(msg):
     global getMode, get_position, get_effort
-    del get_position[:]
-    del get_effort[:]
+    get_position.clear()
+    get_effort.clear()
 
     get_position.append(msg.position[0])
     get_position.append(-msg.position[1])
@@ -221,7 +221,7 @@ def talker():
         # com data
         com_msg.com_position = [pose_orn[0][0], pose_orn[0][1], pose_orn[0][2]]
         com_msg.com_velocity = [get_velocity[0][0], get_velocity[0][1], get_velocity[0][2]]
-        del get_last_vel[:]
+        get_last_vel.clear()
         get_last_vel = com_msg.com_velocity
 
         # stand up control
