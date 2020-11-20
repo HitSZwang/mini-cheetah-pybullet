@@ -14,6 +14,8 @@ Running:
 
 run the controller in simulator:
 
+roscore
+
 rosrun quadruped_ctrl walking_simulation.py
 
 roslaunch quadruped_ctrl quadruped_ctrl.launch
@@ -26,7 +28,7 @@ rosservice call /robot_mode "cmd: 4"
 
 you can switch the gait type:
 
-rosservice call /gait_type "cmd: 1"
+rosservice call /gait_type "cmd: 9"
 gait type:
 
 
